@@ -1,0 +1,323 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.wow {
+    display: flex; /* Membuat wow menjadi flex container */
+    flex-direction: column; /* Mengatur tata letak menjadi kolom */
+    position: relative;
+}
+
+.blue-section {
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+}
+
+.ul-ucl {
+    display: flex;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.li-icl {
+    margin: 5px ; /* Menambahkan ruang atas dan bawah */
+    font-size: 25px;
+}
+
+.li-icl a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.a-navbar {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.a-navbar:hover {
+    position: relative;
+    color: black;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Warna teks pada halaman aktif */
+.a-navbar.active {
+    color: black; /* Misalnya, teks putih pada halaman aktif */
+    position: relative;
+    padding: 10px; /* Padding untuk memberikan ruang di sekitar teks */
+    margin: 0 5px;
+}
+
+.a-navbar.active:before {
+    content: ''; /* Membuat elemen pseudo-element untuk kotak */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.background {
+    position: relative;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    z-index: 1;
+    transition: opacity 5s ease-in-out;
+}
+
+.background img.active {
+    opacity: 1;
+}
+
+.container {
+    background-color: white;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: white;
+    -webkit-box-shadow: white;
+    -moz-box-shadow: white;
+    display: flex; /* Membuat container menjadi flex container */
+}
+
+.a-navbar.active {
+    font-weight: bold; /* Misalnya, memberikan teks tebal untuk menandai halaman aktif */
+}
+
+.logo-container {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.text-container {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-container h1 {
+    margin: 5px 0; /* Menambahkan ruang atas dan bawah */
+    font-size: 22px;
+}
+
+.footer {
+    height: 20vh;
+    background-color: blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;  
+    z-index: 2;
+    position: relative;
+}
+
+.lokasi {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.sosmed {
+    font-size: 12px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    
+}
+
+.sosmed img {
+    filter: invert(1);
+}
+
+.sosmed img:hover {
+    filter: invert(0);
+    transform: scale(1.2); /* Atur skala sesuai kebutuhan */
+    transition: transform 0.3s ease-in-out; /* Animasi transform */
+}
+
+
+.alamat {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.polindra {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.himatif {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.alamat2 {
+    color: white;
+    font-size: 10px;
+}
+
+.pilihan {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.kembali {
+    margin: 5px;
+}
+
+.video1 {
+    margin-top: 20px;
+}
+
+.nama {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 10px;
+    margin-bottom: 10PX;
+}
+
+td, th {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}  
+th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}
+
+.ket {
+    margin-left: 10px;
+}
+
+.tombol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.back, .sebelum, .next {
+    text-align: center;
+    width: 30%;
+}
+
+.back a, .sebelum a, .next a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+}
+
+.back a:hover, .sebelum a:hover, .next a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.profil {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.bio {
+    margin-bottom: 20px;
+}
+
+#profile-image {
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    object-fit: cover;
+    cursor: pointer;
+    position: transform 0.3s ease-in-out;
+}
+
+#profile-image:hover {
+    transform: scale(1.5);
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    max-width: 700px;
+
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fto {
+    margin: 20px;
+    justify-content: center
+}
