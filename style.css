@@ -190,7 +190,7 @@ body, html {
 
 .pilihan {
     font-size: 15px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -257,7 +257,7 @@ th:nth-child(even),td:nth-child(even) {
 
 .profil {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 5px;
     font-size: 12px;
 }
 
